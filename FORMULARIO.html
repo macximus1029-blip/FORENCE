@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluación del Proyecto</title>
+    <link rel="stylesheet" href="ESTILOS FINAL.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Evaluación del Proyecto Forense</h2>
+        <p>Profesor, por favor llene este formulario para evaluar la investigación. La información será enviada directamente a mi correo electrónico.</p>
+        
+        <form action="https://api.web3forms.com/submit" method="POST" class="formulario-evaluacion" autocomplete="off">
+            
+            <!-- Tu llave de acceso ya integrada -->
+            <input type="hidden" name="access_key" value="22f32654-569f-4112-8e5b-5a854ac854bc">
+            
+            <div class="grupo-form">
+                <label>Nombre del Evaluador:</label>
+                <input type="text" name="Nombre" placeholder="Escriba su nombre" required autocomplete="off">
+            </div>
+
+            <div class="grupo-form">
+                <label>Correo Electrónico:</label>
+                <input type="email" name="Correo" placeholder="Escriba su e-mail" required autocomplete="off">
+            </div>
+
+            <div class="grupo-form">
+                <label>Calificación General del Contenido:</label>
+                <div class="opciones-radio">
+                    <input type="radio" name="Calificacion" value="Excelente" id="exc" required><label for="exc">Excelente</label>
+                    <input type="radio" name="Calificacion" value="Bueno" id="bue"><label for="bue">Bueno</label>
+                    <input type="radio" name="Calificacion" value="Regular" id="reg"><label for="reg">Regular</label>
+                </div>
+            </div>
+
+            <div class="grupo-form">
+                <label>¿Qué aspectos de la investigación destacaron más? (Puede marcar varios):</label>
+                <div class="opciones-checkbox">
+                    <input type="checkbox" name="Aspectos" value="Calidad de la informacion" id="info"><label for="info">Calidad y claridad de la información forense</label><br>
+                    <input type="checkbox" name="Aspectos" value="Organizacion de temas" id="org"><label for="org">Organización de las diferentes disciplinas</label><br>
+                    <input type="checkbox" name="Aspectos" value="Caso Practico" id="caso"><label for="caso">Análisis del Caso Real (Acosador Nocturno)</label>
+                </div>
+            </div>
+
+            <div class="grupo-form">
+                <label>Comentarios Adicionales sobre los temas:</label>
+                <textarea name="Comentarios" rows="4" placeholder="Escriba aquí su retroalimentación sobre la información..."></textarea>
+            </div>
+
+            <div class="botones-form">
+                <input type="submit" value="ENVIAR EVALUACIÓN" class="btn-enviar">
+                <input type="reset" value="BORRAR DATOS" class="btn-borrar">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
